@@ -1,0 +1,3 @@
+﻿  ConsoleApplication4.cpp
+C:\Users\evgen\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(9,9): warning C4244:  return: преобразование "double" в "int", возможна потеря данных
+  ConsoleApplication4.vcxproj -> C:\Users\evgen\source\repos\ConsoleApplication4\Debug\ConsoleApplication4.exe
