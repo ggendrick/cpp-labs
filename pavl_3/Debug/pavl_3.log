@@ -1,0 +1,3 @@
+﻿  pavl_3.cpp
+C:\Users\evgen\Documents\GitHub\c-labs\pavl_3\pavl_3.cpp(10,51): warning C4101:  temp: неиспользованная локальная переменная
+  pavl_3.vcxproj -> C:\Users\evgen\Documents\GitHub\c-labs\pavl_3\Debug\pavl_3.exe
