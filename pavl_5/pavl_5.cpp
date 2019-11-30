@@ -12,7 +12,7 @@ struct price { //только английский
 int main()
 {
 	setlocale(LC_ALL, "Ru");
-	const int SIZE = 4;
+	const int SIZE = 8;
 	int i,k,itemp=0;
 	char *min,tovar[20];
 	price arr[SIZE];
