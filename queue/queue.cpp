@@ -2,11 +2,11 @@
 #include <iostream>
 using namespace std;
 template<typename T> //шаблонный класс
-class List
+class Queue
 {
 public:
-     List();
-    ~List();
+     Queue();
+    ~Queue();
     void delete_unit();
     void push(T data);//добавить в конец
     void clear();
@@ -33,17 +33,17 @@ private:
  
 };
 template<typename T> //шаблонный класс
-List<T>::List(){ //конструктор
+Queue<T>::Queue(){ //конструктор
     Size = 0;
     head = nullptr;
 }
 template<typename T> //шаблонный класс
-List<T>::~List() {//деструктор
+Queue<T>::~Queue() {//деструктор
     clear();
 }
 
 template<typename T>
-void List<T>::delete_unit() //удаление первого элемента
+void Queue<T>::delete_unit() //удаление первого элемента
 {
     Node<T> *temp = head;
     head = head->pNext;
@@ -53,7 +53,7 @@ void List<T>::delete_unit() //удаление первого элемента
 }
 
 template<typename T>
-void List<T>::push(T data)
+void Queue<T>::push(T data)
 {
     if (head == nullptr) {
         head = new Node<T>(data);
@@ -70,7 +70,7 @@ void List<T>::push(T data)
 }
 
 template<typename T>
-void List<T>::clear()
+void Queue<T>::clear()
 {
     while (Size>0) {
         pop_front();
@@ -80,7 +80,7 @@ void List<T>::clear()
 
 
 template<typename T>
-T& List<T>::operator[](const int index)
+T& Queue<T>::operator[](const int index)
 {
     int counter = 0;
     Node<T>* current = this->head;
@@ -106,13 +106,13 @@ T& List<T>::operator[](const int index)
 
 int main()
 {
-    List<int> lst;
-    lst.push(5);
-    lst.push(10);
-    lst.push(22);
-    lst.delete_unit();
-    cout<< lst.operator[](0);
-    lst.clear;
+    Queue<int> q;
+    q.push(5);
+    q.push(10);
+    q.push(22);
+    q.delete_unit();
+    cout<< q.operator[](0);
+    q.clear;
 }
 
 
